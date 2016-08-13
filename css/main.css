@@ -1,0 +1,64 @@
+     
+
+
+/*-- Header --*/
+h1 {
+        text-align: center;
+    }    
+
+header {
+      background-color: #3498DB;
+      color: #ffffff;
+      padding-top: 80px;
+      padding-bottom: 40px;
+}
+
+/* -- Navigation list -- */
+#navlist {
+height: 0px;  /* Sets the height to 40px, otherwise the nav bar will look like a line */
+line-height: 120px; /* It makes the links to appear in the middle */
+margin: 0 auto 50px auto;
+text-align: center;
+}
+#navlist li {
+ display: inline;
+ list-style-type: none;
+ padding-left: 30px;
+ padding-right: 30px;
+}
+
+#navlist a:link {
+ text-decoration: none;
+}
+
+/* -- Content --*/
+h2 {
+  text-align: center;
+  color: #3498DB;
+  margin-top: 200px; }
+
+.section-title {
+  text-align: center;
+  color: #3498DB;
+  margin-top: 40px; }
+
+.resume-subtext {
+    font-size: 1.1em;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.line {
+  margin: -20px 0 20px 0;
+  height:2px;
+  width: 100%;
+  background-color: #3498DB; }
+
+.italic {
+  font-style: italic; }
+
+.justify {
+  text-align: justify; }
+
+.text-center {
+  text-align: center; }
