@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>Wei Wang</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -25,7 +25,7 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/w_logo.jpg">
 </head>
 <body>
 
@@ -38,23 +38,38 @@
                 </div>
             </div>
             <div class="row"><div class="twelve columns"></div></div>
-            
-            <div class="row">
-              <div class="twelve columns">
-                <ul id="navlist">
-                    <li class="active"><a href="#" style="color:white">home</a></li>
-                    <li><a href="#" style="color:white">project</a></li>
-                    <li><a href="#" style="color:white">résumé</a></li>
-                    <li><a href="#" style="color:white">contact</a></li>
-                </ul>    
-              </div>
+        </div>
+    </header>
+    
+    <div class="navbar-spacer"></div>
+    
+    <nav class=navbar>
+        <div class="container">
+            <div class="nav-wrapper">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#content-home" style="color:white;
+                                                                             text-decoration:none;" >
+                            home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#content-project" style="color:white;
+                                                                             text-decoration:none;" >
+                            project</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#content-resume" style="color:white;
+                                                                             text-decoration:none;" >
+                            r&eacute;sum&eacute;</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#content-contact" style="color:white;
+                                                                             text-decoration:none;" >contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        
-    <div class="container">  
-        
-    </div>
-    </header>
+    </nav>
 
 <! -- Content -->
     <secion id="content-home">
@@ -69,12 +84,14 @@
         </div>
         
         <div class="row">
-            <div class="three columns">
+            <div class="two columns">
                 <img src="images/profile3.jpg"  class="u-full-width hidden thumbnail"/>
             </div>
-            <div class="nine columns">
+            <div class="ten columns">
                 <p class="justify">
-                needless to say, hire this handsome guy
+                I am an engineer with a M.S.c degree in optical-eletro engineer. My field of research during my master involving with iris recognition system. I have knowledge in computer vision, machine learing, and statistics; and I enjoy data science and visulization. <br><br>
+                During my master study, I devised both the hardware and software structure of an iris recognition system to solve the spoofing attack. I enjoy working out solution for non-trival engineering. I am a self-learner in web programming, such as D3, WebGL, HTML and CSS.
+                
                 </p>
             </div>
         </div>
@@ -90,14 +107,17 @@
             
 <! --- nav for project section --- >
             <div class="row">
-                <div class="offset-by-two two columns"><a href="#project-cell" class="text-center blue"><p>automatic cell detection using GP regression</p></a></div>
-                <div class="three columns"><a href="#hell's kitchen in NYC" class="text-center blue"><p>restaurant sanitation evaluation with open city data</p></a></div>
-                <div class="three columns"><a href="#omnidirectional shadow mapping" class="text-center blue"><p>omnidirectional shadow mapping</p></a></div>
+                <div class="offset-by-two two columns"><a href="#project-cell" class="text-center blue"><p>automatic cell detection Using GP regression</p></a></div>
+                <div class="three columns"><a href="#project-restaurant" class="text-center blue"><p>restaurant sanitation evaluation with open city data</p></a></div>
+                <div class="three columns"><a href="#project-omni" class="text-center blue"><p>omnidirectional shadow mapping</p></a></div>
             </div>
             
             <div class="row">
-                <div class="offset-by-three three columns"><a href="#digit recognizor" class="text-center blue"><p>digit classifier based on neural network</p></a></div>
-                <div class="three columns"><a href="#object recognizor" class="text-center blue"><p>object recognition using SIFT</p></a></div>
+              
+                <div class="offset-by-three three columns"><a href="#project-objrec" class="text-center blue"><p>object recognition Using SIFT</p></a></div>
+            
+                <div class="three columns"><a href="#project-digit" class="text-center blue"><p>digit classifier based on neural network</p></a></div>
+
             </div>
 
             <! --- project --- >
@@ -121,7 +141,7 @@
                     <p class="text-center">
                         MATLAB
                     </p>
-                    <a href="#" target="_blank" class="center blue">
+                    <a href="./docs/Exam-Poster-final.pdf" target="_blank" class="center blue">
                         <button>view poster</button>
                     </a>
                 </div>
@@ -130,7 +150,7 @@
             <! RESTAURANT>
              <div class="row">
                 <div class="twelve columns">
-                    <h4 id="project-resturant" class="section-title">restaurant sanitation evaluation with open city data</h4>
+                    <h4 id="project-restaurant" class="section-title">restaurant sanitation evaluation with open city data</h4>
                     <div class="line"> </div>
                 </div>
             </div>
@@ -151,7 +171,7 @@
                     <p class="text-center">
                         Python, MATLAB, HTML5 , Javascript, D3
                     </p>
-                    <a href="#" target="_blank" class="center blue">
+                    <a href="http://hellskitchennyc.github.io/" target="_blank" class="center blue">
                         <button>view website</button>
                     </a>
                 </div>
@@ -160,7 +180,7 @@
             <! OMNI>
             <div class="row">
                 <div class="twelve columns">
-                    <h4 id="#project-omni" class="section-title">omnidirectional shadow mapping</h4>
+                    <h4 id="project-omni" class="section-title">omnidirectional shadow mapping</h4>
                     <div class="line"></div>  
                 </div>
             </div>
@@ -182,7 +202,7 @@
                     <p class="text-center">
                         HTML5 , Javascript, WebGL
                     </p>
-                    <a href="#" target="_blank" class="center blue">
+                    <a href="http://homepage.univie.ac.at/a1163697/WebGL/finalProject/aztec.html" target="_blank" class="center blue">
                         <button>view website</button>
                     </a>
                 </div>
@@ -191,7 +211,7 @@
             <! OBJREC>
              <div class="row">
                 <div class="twelve columns">
-                    <h4 id="porject-objrec" class="section-title">object recognition using SIFT feature</h4>
+                    <h4 id="project-objrec" class="section-title">object recognition using SIFT feature</h4>
                     <div class="line"></div>
                 </div>
             </div>
@@ -207,13 +227,13 @@
                     <p class="text-center">
                         MATLAB, VLfeat
                     </p>
-                    <a href="#" target="_blank" class="center blue">
+                    <a href="./docs/report_CV_SIFT.pdf" target="_blank" class="center blue">
                         <button>view pdf</button>
                     </a>
                 </div>
             </div>
 
-            <! ~~~~~~~~~~~~~~~~~~~~~~~~>
+            <! DIGIT>
             
             <div class="row">
                 <div class="twelve columns">
@@ -238,7 +258,7 @@
                      <p class="text-center">
                         MATLAB
                     </p>
-                    <a href="#" target="_blank" class="center blue">
+                    <a href="./docs/report_ML_final.pdf" target="_blank" class="center blue">
                         <button>view pdf</button>
                     </a>
                 </div>
@@ -257,9 +277,9 @@
 <! nav for resume>
             <div class="row">
                 <div class="offset-by-two two columns"><a href="#resume-education" class="text-center blue"><p>education</p></a></div>
+                <div class="two columns"><a href="#resume-skills" class="text-center blue"><p>skills</p></a></div>
                 <div class="two columns"><a href="#resume-projects" class="text-center blue"><p>projects</p></a></div>
-                <div class="two columns"><a href="#resume-publication" class="text-center blue"><p>publications</p></a></div>
-                <div class="two columns"><a href="#resume-skill" class="text-center blue"><p>skills</p></a></div>
+                <div class="two columns"><a href="#resume-publications" class="text-center blue"><p>publications</p></a></div>
             </div>
            
            
@@ -496,8 +516,8 @@
                 <div class="row">
                     <div class="twelve columns">
                         <p class="resume-subtext">
-                            Blah
-                            <span class="italic">[Python, Spark, numpy, PyCUDA, PyOpenCL]</span>
+                            place holder
+                            <span class="italic">[place holder]</span>
                         </p>
                     </div>
                </div>
@@ -532,12 +552,24 @@
                     </ol>
                     </div>
                 </div>
-               
+               <div class="line"></div>
            </div>
-           <div>
-               <div class="row">
-               </div>
-           </div>
+           <! contact>
+        </div>
+    </section>
+    
+     <section id="content-contact">
+        <div class="container">
+            <h2>contact</h2>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <p class="text-center"><a href="mailto:wwang107@gmail.com" target="_blank" class="blue">wwang107@gmail.com</a></p>
+                    <p class="text-center"><a href="" target="_blank" class="blue">LinkedIn</a></p>
+                </div>
+            </div>
+
+            <div class="spacer-big"></div>
         </div>
     </section>
     
