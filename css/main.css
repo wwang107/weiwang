@@ -14,25 +14,10 @@ header {
 }
 
 /* -- Navigation list -- */
-#navlist {
-height: 0px;  /* Sets the height to 40px, otherwise the nav bar will look like a line */
-line-height: 120px; /* It makes the links to appear in the middle */
-margin: 0 auto 50px auto;
-text-align: center;
-}
-#navlist li {
- display: inline;
- list-style-type: none;
- padding-left: 30px;
- padding-right: 30px;
-}
-
-#navlist a:link {
- text-decoration: none;
-}
 
 .navbar {
-  display: none; }
+ display: none; 
+ }
 
 .nav-wrapper {
   width: 100%;
@@ -74,6 +59,12 @@ text-align: center;
     background: #3498DB;
     color: #ffffff;
     z-index: 99; }
+
+/* Navbar animate */
+.has-docked-nav .navbar {
+    position: fixed;
+    top: 0;
+    left: 0; }
 
 /* -- Content --*/
 a.blue, a.blue:visited, a.blue:active {
