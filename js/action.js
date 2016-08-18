@@ -11,7 +11,6 @@ $(document).ready(function() {
         $window.on('scroll', onScroll);
         $window.on('resize', resize);
         $('a[href^="#"]').on('click', smoothScroll);
-        $flask.on('click', tipFlask);
     }
 
     function smoothScroll(e) {
@@ -49,27 +48,6 @@ $(document).ready(function() {
         if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
             $body.removeClass('has-docked-nav');
         }
-
-        // Lazy loading images
-        $(".thumbnail-wrapper").filter(".not-loaded").filter(function(i, el) {
-            return elementInViewport(el);
-        }).each(function(i, el) {
-            // Let image be on screen for a minimum amount of time before loading
-            var $this = $(this);
-            setTimeout(function() {
-                // Still on screen
-                if (elementInViewport(el)) {
-                    var $spinner = $this.children("div");
-                    var $img = $this.children("img");
-                    $img.attr("src", images[$img.attr("id")]).load(function() {
-                        // Remove spinner, fade in image once loaded
-                        $spinner.addClass("hidden");
-                        $img.fadeIn("slow").removeClass("hidden");
-                    });
-                    $this.removeClass("not-loaded");
-                }
-            }, 50); // impression time
-        });
     }
 
     function elementInViewport(el) {
@@ -77,19 +55,7 @@ $(document).ready(function() {
         return rect.top >= 0 && rect.left >= 0
             && rect.top <= (window.innerHeight || document.documentElement.clientHeight);
     }
-
-    function tipFlask() {
-        $flask.addClass("tip");
-        setTimeout(function() {
-            $flask.removeClass("tip");
-        }, 1100);
-        // log flask click
-        $.ajax({
-            type: "GET",
-            url: "/nav?n=flask"
-        });
-    }
-
+    
     init();
 
 });
