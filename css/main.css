@@ -13,6 +13,12 @@ header {
       padding-bottom: 40px;
 }
 
+.avatar {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
 /* -- Navigation list -- */
 
 .navbar {
