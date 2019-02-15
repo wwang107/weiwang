@@ -185,6 +185,12 @@ img {
   border: 0;
 }
 
+img.avatar {
+  border-radius: 50%;
+  width:250px; 
+  height:250px;
+}
+
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
